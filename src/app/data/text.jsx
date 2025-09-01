@@ -13,7 +13,7 @@ export const doingrntext = [
     txt: (
       <>
         I’m currently looking for an
-        <strong>apprenticeship starting October 2025</strong> as a{" "}
+        <strong> apprenticeship starting October 2025</strong> as a{" "}
         <strong>Creative Developer</strong> or{" "}
         <strong>Fullstack Developer</strong>, where I can apply my skills to
         design and build elegant, high-performing interfaces.
@@ -47,7 +47,7 @@ export const mybackgroundtext = [
         I’ve been involved in all stages of projects: gathering requirements,
         design, backend development (mostly in <strong>Python</strong>), UI
         creation, deploying web apps and APIs, and cloud integration on{" "}
-        <strong>Azure</strong>
+        <strong> Azure</strong>
         with <strong>Docker</strong>. These experiences helped me build strong
         autonomy, rigor, and a real team spirit.
       </>
