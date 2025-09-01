@@ -15,6 +15,7 @@ import PanelPhone from "@/components/Phone/PanelPhone/PanelPhone";
 import InfoSectionPhone from "@/components/Phone/InfoSectionPhone/inforSectionPhone";
 import InfoSection from "@/components/Desktop/InfoSection/InfoSection";
 import { navlist } from "./data/navlist";
+import ProfilePicture from "@/components/ProfilePicture/ProfilePicture";
 
 import { doingrntext, mybackgroundtext, projectstext } from "./data/text";
 
@@ -104,6 +105,7 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.textSectionContainer}>
               <Description setActiveSection={setActiveSection} />
+              {/* <ProfilePicture isLoading={isLoading} /> */}
               <InfoSection
                 setActiveSection={setActiveSection}
                 isLoading={isLoading}

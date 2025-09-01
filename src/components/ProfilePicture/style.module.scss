@@ -1,0 +1,34 @@
+.profilepicture {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  height: 50vh; // hauteur du composant
+  width: 100%;
+  gap: 5vw;
+
+  .imageContainer {
+    position: relative;
+    width: 40vw;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+
+  .image {
+    object-fit: cover; // ou contain selon ce que tu veux
+    object-position: top;
+  }
+  .screen {
+    background-color: var(--background-loader);
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    // z-index: 10;
+  }
+
+  .profileText {
+    padding-top: 10vh;
+    font-family: "Satoshi-Medium", sans-serif;
+    font-size: 2vw;
+  }
+}
