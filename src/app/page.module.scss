@@ -1,0 +1,68 @@
+.pageContainer {
+  position: relative;
+
+  .phoneContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45vh;
+
+    .textSectionContainer {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      gap: 30vh;
+      padding-bottom: 35vh;
+
+      h1 {
+        font-family: "Satoshi-Medium", sans-serif;
+        font-size: 4.5vw;
+      }
+
+      h2 {
+        font-family: "Satoshi-Regular", sans-serif;
+        font-size: 3.5vw;
+      }
+      h3 {
+        font-size: 3vw;
+        font-family: "Poppins-Black", sans-serif;
+      }
+
+      p {
+        font-family: "Satoshi-Light", sans-serif;
+        font-size: 1.2vw;
+      }
+    }
+
+    .textSectionContainerPhone {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 20vh;
+      padding-bottom: 35vh;
+      h1 {
+        font-family: "Satoshi-Bold", sans-serif;
+        font-size: 9vw;
+      }
+
+      h2 {
+        font-size: 8vw;
+        font-family: "Satoshi-Medium", sans-serif;
+      }
+
+      h3 {
+        font-size: 5vw;
+        font-family: "Poppins-Black", sans-serif;
+      }
+    }
+  }
+}

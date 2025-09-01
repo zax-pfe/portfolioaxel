@@ -1,0 +1,26 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-loader);
+  // opacity: 0.5;
+  // position: absolute;
+  z-index: 20;
+
+  .window {
+    height: 200px;
+    width: 180px;
+    overflow: hidden;
+  }
+
+  .box {
+    height: 200px;
+    width: 180px;
+    background-color: var(--background);
+  }
+}

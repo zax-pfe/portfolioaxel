@@ -1,0 +1,65 @@
+.phraseContainer {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  // width: 100%;
+  // border: solid black 1px;
+  // gap: 1vw;
+}
+
+.lineContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  // gap: 1vw;
+  position: relative;
+  // border: solid 1px beige;
+}
+
+.elementContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // gap: 1vw;
+
+  .text {
+    // color: black;
+    // font-size: 50px;
+    font-size: 5vw;
+    font-family: "Poppins-Black", sans-serif;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px var(--text);
+    -webkit-text-fill-color: transparent;
+  }
+
+  .imageContainer {
+    // height: 100px;
+    // width: 266px;
+    height: (150) * 0.8px;
+    width: (400) * 0.8px;
+    // border: solid black 1px;
+
+    .image {
+      height: 100%;
+      border-radius: 30px;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  .imageContainerSmall {
+    height: 150px;
+    width: 200px;
+
+    // height: 100px;
+    // width: 133px;
+
+    .image {
+      height: 100%;
+      border-radius: 30px;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}

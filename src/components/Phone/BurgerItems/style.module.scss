@@ -1,0 +1,17 @@
+.burgeritems {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding-left: 4vw;
+
+  .item {
+    font-size: 7vw;
+    font-family: "Satoshi-Medium", sans-serif;
+  }
+  .itemActive {
+    font-size: 7vw;
+    font-family: "Satoshi-Medium", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+  }
+}

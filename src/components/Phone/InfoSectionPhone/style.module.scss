@@ -1,0 +1,12 @@
+.DoingRN {
+  display: flex;
+  flex-direction: column;
+  padding: 0 7vw 0 7vw;
+  gap: 5vh;
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+}

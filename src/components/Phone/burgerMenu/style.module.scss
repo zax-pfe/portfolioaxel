@@ -1,0 +1,65 @@
+.burgerMenu {
+  height: 40px;
+  width: 40px;
+  // background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+
+  .lineDotContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20px;
+    .dot {
+      width: 5px;
+      height: 5px;
+      background-color: var(--text);
+      border-radius: 50%;
+      border: solid var(--text) 1px;
+    }
+
+    .topLine {
+      width: 12px;
+      height: 4px;
+      border-radius: 15px;
+      background-color: var(--text);
+      border: solid var(--text) 1px;
+    }
+  }
+  .bottomLine {
+    width: 20px;
+    height: 4px;
+    border-radius: 15px;
+    background-color: var(--text);
+    border: solid var(--text) 1px;
+  }
+
+  .crossContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 4px;
+    .lineOne {
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      border-radius: 15px;
+      background-color: var(--text);
+      border: solid var(--text) 1px;
+      transform: rotate(30deg);
+    }
+    .lineTwo {
+      transform: rotate(-30deg);
+      width: 20px;
+      height: 4px;
+      border-radius: 15px;
+      background-color: var(--text);
+      border: solid var(--text) 1px;
+    }
+  }
+}

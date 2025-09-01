@@ -1,0 +1,16 @@
+@import url("styles/satoshi.css");
+@import url("styles/poppins.css");
+@import "tailwindcss";
+
+:root {
+  --background: #7eacdb;
+  --background-loader: #6498cd;
+  --text: #203a55;
+  --phonepanel: #7eacdb;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: "Satoshi-Regular", sans-serif;
+}

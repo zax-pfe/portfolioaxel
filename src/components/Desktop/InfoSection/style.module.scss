@@ -1,0 +1,19 @@
+.infoSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 4vw 0 4vw;
+
+  h2 {
+    flex: 0 0 50%;
+    position: sticky;
+    top: 20vh;
+    align-self: flex-start;
+  }
+  .textContainer {
+    flex: 0 0 50%; /* 0 grow, 0 shrink, 50% basis */
+    display: flex;
+    flex-direction: column;
+    padding: 20vh 2vw 2vh 2vw;
+    gap: 8vh;
+  }
+}

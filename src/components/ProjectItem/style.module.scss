@@ -1,0 +1,27 @@
+.projectItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 100%;
+  border-top: solid 1px var(--text);
+  position: relative;
+
+  .textContainer {
+    font-size: 5vw;
+    position: relative;
+    font-family: "Poppins-Black", sans-serif;
+    text-transform: uppercase;
+    // letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+
+  .stroke {
+    -webkit-text-stroke: 1px var(--text);
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+  }
+  .full {
+    color: var(--text);
+  }
+}

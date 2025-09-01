@@ -1,0 +1,41 @@
+.leftPanel {
+  position: fixed;
+  display: flex;
+  top: 0;
+  height: 100vh;
+  // border: solid 1px black;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 10vw;
+
+  .infopanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    // border: solid 1px black;
+    height: 50%;
+  }
+
+  p {
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+  }
+  .ballcontainer {
+    position: relative;
+    cursor: pointer;
+    // border: solid 1px black;
+    padding: 3vh 0 0 3vw;
+    .screen {
+      position: absolute;
+      background-color: var(--background);
+      opacity: 1;
+      z-index: 2;
+      width: 80%;
+      height: 100%;
+    }
+  }
+}

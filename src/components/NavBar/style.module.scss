@@ -1,0 +1,29 @@
+// .navbar {
+//   position: sticky;
+//   top: 0;
+//   right: 0;
+//   display: flex;
+//   flex-direction: column;
+//   // align-items: flex-start;
+//   justify-content: center;
+//   height: 100vh;
+//   width: 13vw;
+//   gap: 5vh;
+//   // font-size: medium;
+//   // border: solid 1px black;
+// }
+.navbar {
+  position: fixed;
+  height: 100vh;
+  width: 15vw;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 13vw;
+  gap: 5vh;
+  // border: solid 1px black;
+}

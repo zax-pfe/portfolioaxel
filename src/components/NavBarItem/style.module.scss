@@ -1,0 +1,39 @@
+.NavBarItem {
+  display: flex;
+  width: 90%;
+  height: 5vh;
+
+  .name {
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    flex: 0 0 70%;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 30%;
+    gap: 5px;
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      background-color: var(--text);
+      border-radius: 50%;
+      border: solid var(--text);
+    }
+
+    .line {
+      width: 20px;
+      height: 4px;
+      border-radius: 15px;
+      background-color: var(--text);
+      border: solid var(--text) 1px;
+    }
+  }
+}
