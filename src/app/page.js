@@ -65,7 +65,7 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.textSectionContainerPhone}>
               <Description setActiveSection={setActiveSection} />
-
+              <ProfilePicture isLoading={isLoading} />
               <InfoSectionPhone
                 setActiveSection={setActiveSection}
                 isLoading={isLoading}
@@ -105,7 +105,7 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.textSectionContainer}>
               <Description setActiveSection={setActiveSection} />
-              {/* <ProfilePicture isLoading={isLoading} /> */}
+              <ProfilePicture isLoading={isLoading} />
               <InfoSection
                 setActiveSection={setActiveSection}
                 isLoading={isLoading}

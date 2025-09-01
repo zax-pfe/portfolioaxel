@@ -1,42 +1,39 @@
 import styles from "./style.module.scss";
 import Image from "next/image";
 import AnimatedHeaderText from "../AnimatedText/AnimatedHeaderText";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import gsap from "gsap";
 import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 export default function ProfilePicture({ isLoading }) {
-  const screen = useRef(null);
-  useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const timeline = gsap.timeline({
-      defaults: { duration: 1.2, autoAlpha: 0, yPercent: 100 },
-      scrollTrigger: {
-        trigger: screen.current,
-        start: "top 90%",
-        onEnter: () => timeline.play(),
-        onEnterBack: () => {},
-      },
+  const screenRef = useRef(null);
+  const imageContainerRef = useRef(null);
+  const controls = useAnimation();
+  const isInView = useInView(imageContainerRef, { once: true, margin: "-30%" });
+  // déclenche l'animation quand l'image est visible
+  if (isInView) {
+    controls.start({
+      y: "100%",
+      transition: { duration: 0.7, ease: [0.86, 0, 0.07, 1] },
     });
-
-    timeline.to(screen.current, {
-      y: 100,
-      duration: 0.7,
-      ease: "power.inOut",
-    });
-  }, [isLoading]);
-
+  }
   return (
     <div className={styles.profilepicture}>
-      <div className={styles.imageContainer}>
+      <div ref={imageContainerRef} className={styles.imageContainer}>
         <Image
           src="/assets/me.jpg"
           alt="Me happy in Corea"
           fill
           className={styles.image}
         />
-        <div ref={screen} className={styles.screen} />
+        <motion.div
+          initial={{ y: 0 }}
+          animate={controls}
+          ref={screenRef}
+          className={styles.screen}
+        />
       </div>
       <div className={styles.profileText}>
         <AnimatedHeaderText

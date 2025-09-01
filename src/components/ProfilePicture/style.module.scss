@@ -1,34 +1,38 @@
 .profilepicture {
   display: flex;
-  // align-items: center;
+  // flex-direction: column;
   justify-content: center;
-  height: 50vh; // hauteur du composant
+  height: 50vh;
   width: 100%;
   gap: 5vw;
 
   .imageContainer {
     position: relative;
     width: 40vw;
-    height: 100%;
+    aspect-ratio: 1; // maintient une taille carrée responsive
     border-radius: 40px;
     overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); // ombre en bas
   }
 
   .image {
-    object-fit: cover; // ou contain selon ce que tu veux
+    object-fit: cover;
     object-position: top;
   }
+
   .screen {
-    background-color: var(--background-loader);
-    height: 50vh;
-    width: 100%;
     position: absolute;
-    // z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; // couvre tout le container, quel que soit l'écran
+    background-color: var(--background-loader);
+    z-index: 2;
   }
 
   .profileText {
-    padding-top: 10vh;
+    padding-top: 5vh;
     font-family: "Satoshi-Medium", sans-serif;
-    font-size: 2vw;
+    font-size: clamp(1rem, 2vw, 2rem); // responsive
   }
 }
