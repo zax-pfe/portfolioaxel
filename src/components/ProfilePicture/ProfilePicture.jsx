@@ -24,7 +24,7 @@ export default function ProfilePicture({ isLoading }) {
       <div ref={imageContainerRef} className={styles.imageContainer}>
         <Image
           src="/assets/me.jpg"
-          alt="Me happy in Corea"
+          alt="Me happy in Korea"
           fill
           className={styles.image}
         />
@@ -37,7 +37,7 @@ export default function ProfilePicture({ isLoading }) {
       </div>
       <div className={styles.profileText}>
         <AnimatedHeaderText
-          text={"<- Me happy in Corea"}
+          text={"<- Me happy in Korea"}
           isLoading={isLoading}
         />
       </div>
