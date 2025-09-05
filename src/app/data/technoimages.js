@@ -1,18 +1,18 @@
 import framermotion from "../../../public/assets/images/framermotion.png";
 import next from "../../../public/assets/images/next.png";
 import gsap from "../../../public/assets/images/gsap.png";
-import gsapBlue from "../../../public/assets/images/GsapBlue.png";
+// import gsapBlue from "../../../public/assets/images/GsapBlue.png";
 
 import python from "../../../public/assets/images/python.png";
-import pythonBlue from "../../../public/assets/images/pythonBlue.png";
+// import pythonBlue from "../../../public/assets/images/pythonBlue.png";
 
 import react from "../../../public/assets/images/react.png";
-import reactBlue from "../../../public/assets/images/reactBlue.png";
+// import reactBlue from "../../../public/assets/images/reactBlue.png";
 
 import threejs from "../../../public/assets/images/threejs.png";
 import figma from "../../../public/assets/images/figma.png";
 import azure from "../../../public/assets/images/azure.png";
-import js from "../../../public/assets/images/js.png";
+import javatype from "../../../public/assets/images/javatype.png";
 
 export const technoimages = [
   {
@@ -28,17 +28,17 @@ export const technoimages = [
   {
     id: 2,
     name: "GSAP",
-    src: gsapBlue,
+    src: gsap,
   },
   {
     id: 3,
     name: "Python",
-    src: pythonBlue,
+    src: python,
   },
   {
     id: 4,
     name: "React JS",
-    src: reactBlue,
+    src: react,
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const technoimages = [
   },
   {
     id: 8,
-    name: "javascript",
-    src: js,
+    name: "language",
+    src: javatype,
   },
 ];

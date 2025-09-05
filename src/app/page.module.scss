@@ -21,7 +21,7 @@
       flex-direction: column;
       width: 80vw;
       gap: 25vh;
-      padding-bottom: 35vh;
+      padding-bottom: 15vh;
 
       h1 {
         font-family: "Satoshi-Medium", sans-serif;
@@ -33,7 +33,7 @@
         font-size: 3.5vw;
       }
       h3 {
-        font-size: 3vw;
+        font-size: 5vw;
         font-family: "Poppins-Black", sans-serif;
       }
 
@@ -48,7 +48,7 @@
       flex-direction: column;
       width: 100%;
       gap: 20vh;
-      padding-bottom: 35vh;
+      padding-bottom: 0vh;
       h1 {
         font-family: "Satoshi-Bold", sans-serif;
         font-size: 9vw;
@@ -63,6 +63,18 @@
         font-size: 5vw;
         font-family: "Poppins-Black", sans-serif;
       }
+    }
+    .parallaxWrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      display: block; // ← annule le centrage de .content
+      margin-bottom: 15vh;
+    }
+    @media (max-width: 768px) {
+      margin: 10vh 0;
+      width: 100vw; // occupe toute la largeur écran
+      overflow-x: hidden; // coupe les débordements horizontaux
     }
   }
 }

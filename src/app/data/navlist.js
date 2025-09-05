@@ -9,6 +9,9 @@ export const navlist = [
     name: "My background",
   },
   {
+    name: "Competencies",
+  },
+  {
     name: "Projects",
   },
   {

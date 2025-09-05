@@ -76,3 +76,10 @@ export const projectstext = [
     ),
   },
 ];
+
+export const competencies = [
+  {
+    // txt: <>A uncomplete list of my competencies and skills.</>,
+    txt: <> </>,
+  },
+];

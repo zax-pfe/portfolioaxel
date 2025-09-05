@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Loader from "@/components/Loader/Loader";
 import React, { useEffect, useState } from "react";
 import styles from "./page.module.scss";
@@ -16,8 +15,14 @@ import InfoSectionPhone from "@/components/Phone/InfoSectionPhone/inforSectionPh
 import InfoSection from "@/components/Desktop/InfoSection/InfoSection";
 import { navlist } from "./data/navlist";
 import ProfilePicture from "@/components/ProfilePicture/ProfilePicture";
-
-import { doingrntext, mybackgroundtext, projectstext } from "./data/text";
+import ParralaxTextPage from "@/components/ParallaxTextPage/ParallaxTextPage";
+import AnimatedHeaderText from "@/components/AnimatedText/AnimatedHeaderText";
+import {
+  doingrntext,
+  mybackgroundtext,
+  projectstext,
+  competencies,
+} from "./data/text";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -78,15 +83,27 @@ export default function Home() {
                 id={navlist[2].name}
                 texts={mybackgroundtext}
               />
-
+              <InfoSectionPhone
+                setActiveSection={setActiveSection}
+                isLoading={isLoading}
+                name={"My Core competencies"}
+                id={navlist[3].name}
+                texts={competencies}
+              />
+            </div>
+            <div className={styles.parallaxWrapper}>
+              <ParralaxTextPage />
+            </div>
+            <div className={styles.textSectionContainerPhone}>
               <InfoSectionPhone
                 setActiveSection={setActiveSection}
                 isLoading={isLoading}
                 name={"Some Project i have worked on"}
-                id={navlist[3].name}
+                id={navlist[4].name}
                 texts={projectstext}
               />
             </div>
+            <div className="h-[10vh]" />
             <ProjectW3D setActiveSection={setActiveSection} />
             <div className={styles.textSectionContainerPhone}>
               <Contact
@@ -117,15 +134,27 @@ export default function Home() {
                 id={navlist[2].name}
                 texts={mybackgroundtext}
               />
-
+              <InfoSection
+                setActiveSection={setActiveSection}
+                isLoading={isLoading}
+                name={"Core competencies"}
+                id={navlist[3].name}
+                texts={competencies}
+              />
+            </div>
+            <div className={styles.parallaxWrapper}>
+              <ParralaxTextPage />
+            </div>
+            <div className={styles.textSectionContainer}>
               <InfoSection
                 setActiveSection={setActiveSection}
                 isLoading={isLoading}
                 name={"Some Project i have worked on"}
-                id={navlist[3].name}
+                id={navlist[4].name}
                 texts={projectstext}
               />
             </div>
+
             <ProjectW3D setActiveSection={setActiveSection} />
             <div className={styles.textSectionContainer}>
               <Contact
