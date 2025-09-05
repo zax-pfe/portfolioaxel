@@ -33,7 +33,9 @@ export default function Home() {
 
   useEffect(() => {
     // Lenis scroll init
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      lerp: device === "phone" ? 0.05 : 0.1,
+    });
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
