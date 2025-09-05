@@ -47,7 +47,7 @@ export const mybackgroundtext = [
         I’ve been involved in all stages of projects: gathering requirements,
         design, backend development (mostly in <strong>Python</strong>), UI
         creation, deploying web apps and APIs, and cloud integration on{" "}
-        <strong> Azure</strong>
+        <strong> Azure </strong>
         with <strong>Docker</strong>. These experiences helped me build strong
         autonomy, rigor, and a real team spirit.
       </>

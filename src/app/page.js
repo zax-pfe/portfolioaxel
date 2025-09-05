@@ -38,14 +38,11 @@ export default function Home() {
     // Hide the loader and scroll to the top while loading
     document.body.style.overflow = "hidden";
     window.scrollTo(0, 0);
-
-    // Setting up the size of the ball rearding the device used
-
     setTimeout(() => {
+      window.scrollTo(0, 0);
       setIsLoading(false);
       document.body.style.cursor = "default";
       document.body.style.overflow = "auto";
-      window.scrollTo(0, 0);
       setActiveSection("Home");
     }, 2000);
 
