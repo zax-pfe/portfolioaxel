@@ -9,21 +9,35 @@ export default function Projects({ setActiveSection, setActiveProject }) {
       // viewport={{ once: false, amount: 0.5 }}
       // id="Projects"
     >
-      <ProjectItem
-        projectname={"Project Apsideu"}
-        projectId={0}
-        setActiveProject={setActiveProject}
-      />
+      <a
+        href="https://maxime-despiau.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ width: "100%" }}
+      >
+        <ProjectItem
+          projectname={"Maxime Despiau"}
+          projectId={0}
+          setActiveProject={setActiveProject}
+        />
+      </a>
       <ProjectItem
         projectname={"Chloe Girten s Website"}
         projectId={1}
         setActiveProject={setActiveProject}
       />
-      <ProjectItem
-        projectname={"Yomy Care"}
-        projectId={2}
-        setActiveProject={setActiveProject}
-      />
+      <a
+        href="https://yomy.care/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ width: "100%" }}
+      >
+        <ProjectItem
+          projectname={"Yomy Care"}
+          projectId={2}
+          setActiveProject={setActiveProject}
+        />
+      </a>
       <ProjectItem
         projectname={"Contract Copilot : COCO"}
         projectId={3}
