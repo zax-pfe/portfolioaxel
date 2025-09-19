@@ -45,13 +45,14 @@ export default function Home() {
     // Hide the loader and scroll to the top while loading
     document.body.style.overflow = "hidden";
     window.scrollTo(0, 0);
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       window.scrollTo(0, 0);
       setIsLoading(false);
       document.body.style.cursor = "default";
       document.body.style.overflow = "auto";
-      setActiveSection("Home");
-    }, 2000);
+      document.body.style.paddingRight = "0px";
+      setActiveSection(0);
+    }, 2400);
 
     return () => clearTimeout(timeout);
   }, []);

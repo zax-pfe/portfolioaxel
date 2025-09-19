@@ -1,5 +1,5 @@
 import styles from "./style.module.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const burgerVariant = {
