@@ -10,7 +10,7 @@ export default function Projects({ setActiveSection, setActiveProject }) {
       // id="Projects"
     >
       <a
-        href="https://maxime-despiau.vercel.app/"
+        href="https://maximedespiau.com/"
         target="_blank"
         rel="noopener noreferrer"
         style={{ width: "100%" }}
