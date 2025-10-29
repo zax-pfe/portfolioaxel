@@ -5,6 +5,7 @@ import SplitText from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import styles from "./style.module.scss";
 import { motion } from "framer-motion";
+
 export default function Description({ setActiveSection }) {
   gsap.registerPlugin(SplitText);
   useGSAP(() => {
@@ -42,10 +43,9 @@ export default function Description({ setActiveSection }) {
       id="Home"
     >
       <h1 className="text">
-        Hello, I’m Axel 👋
+        Hello, I’m Axel,
         <br />A fullstack developer passionate about design and building smooth,
-        elegant digital experiences. Currently studying at Gobelins, I’m looking
-        for an apprenticeship starting October 2025.
+        elegant digital experiences. Currently studying at Gobelins.
       </h1>
     </motion.section>
   );
