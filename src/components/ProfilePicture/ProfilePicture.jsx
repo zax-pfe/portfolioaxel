@@ -6,6 +6,28 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import dynamic from "next/dynamic";
+
+const WaterDistortionCanvas = dynamic(
+  () =>
+    import("@/Components/RippleEffect/WaterDistortion").then(
+      (mod) => mod.WaterDistortionCanvas,
+    ),
+  { ssr: false },
+);
+
+const images = ["/assets/me.jpg"];
+
+const rippleSettings = {
+  intensity: 0.06,
+  scale: 0.05,
+  viscosity: 0.89,
+  decay: 0.98,
+  distortionStrength: 0.05,
+  aberration: 0.01,
+  lightIntensity: 0.04,
+  specularPower: 8.1,
+};
 
 export default function ProfilePicture({ isLoading }) {
   const screenRef = useRef(null);
@@ -22,12 +44,15 @@ export default function ProfilePicture({ isLoading }) {
   return (
     <div className={styles.profilepicture}>
       <div ref={imageContainerRef} className={styles.imageContainer}>
-        <Image
+        {/* <Image
           src="/assets/me.jpg"
           alt="Me happy in Korea"
           fill
           className={styles.image}
-        />
+        /> */}
+        <div className={styles.waterDistorsionContainer}>
+          <WaterDistortionCanvas images={images} settings={rippleSettings} />
+        </div>
         <motion.div
           initial={{ y: 0 }}
           animate={controls}
