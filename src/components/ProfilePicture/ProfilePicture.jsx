@@ -2,15 +2,12 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import AnimatedHeaderText from "../AnimatedText/AnimatedHeaderText";
 import { useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const WaterDistortionCanvas = dynamic(
   () =>
-    import("@/Components/RippleEffect/WaterDistortion").then(
+    import("@/components/RippleEffect/WaterDistortion").then(
       (mod) => mod.WaterDistortionCanvas,
     ),
   { ssr: false },
