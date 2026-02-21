@@ -40,6 +40,11 @@
   .waterDistorsionContainer {
     width: 40vw;
     height: 50vh;
+
+    @media (max-width: 768px) {
+      width: 80vw; // plus large en mobile
+      max-width: 400px; // limite pour éviter qu'elle soit énorme sur tablette
+    }
   }
 
   .screen {

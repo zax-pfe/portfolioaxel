@@ -58,10 +58,7 @@ export default function ProfilePicture({ isLoading }) {
         />
       </div>
       <div className={styles.profileText}>
-        <AnimatedHeaderText
-          text={"<- Me happy in Korea"}
-          isLoading={isLoading}
-        />
+        <AnimatedHeaderText text={"<- Hover me !"} isLoading={isLoading} />
       </div>
     </div>
   );
